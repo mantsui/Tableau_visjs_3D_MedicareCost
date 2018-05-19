@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Tableau D3 Treemap Medicare Outpatient</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+	<meta charset="utf-8">
 
-		<script type='text/JavaScript'
-			src='https://d3js.org/d3.v3.min.js'></script>
-		<script type='text/JavaScript'
-			src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+	<title>Tableau D3 Chord Diagram - Superstore</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-		<!-- Access the API & Load your JavaScript -->
-		<script type='text/JavaScript'
-			src='https://public.tableau.com/javascripts/api/tableau-2.js'></script>
-
-
-	</head>
-
-	<body>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<!--script src="http://vizjs.org/viz.v1.1.0.min.js"></script-->
 	
-		<center><h2>D3 Zoomable Treemap - Medicare Outpatient Services</h2></center>
+	<script src="viz.v1.1.0.min.js"></script>	
+	
+	<!-- Access the API & Load your JavaScript -->
+	<script type='text/JavaScript'
+		src='https://public.tableau.com/javascripts/api/tableau-2.js'></script>
+
+</head>
+
+<body>
+
+	<center>
+		<h2>D3 Chord Diagram with Tableau Superstore</h2>
+	
 		<div class="flex-container">
-			<div id="D3_Treemap"></div>
-			<div id="myMedicareOPViz"></div>
+			<div id="D3_Chord_Diagram"></div>
+			<div id="mySuperstoreViz"></div>
 		</div>
-				
-		<script type="text/javascript" src="Tableau_D3_Treemap.js"></script>
-	</body>
+	</center>
+		
+	<script src="Tableau_D3_Chord.js"></script>
+	
+</body>
 
 </html>
