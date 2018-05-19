@@ -1,33 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
 <head>
 	<meta charset="utf-8">
-
-	<title>Tableau D3 Chord Diagram - Superstore</title>
+  <title>visjs 3-D Scatter - Medicare Cost Report Statistics</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<script src="https://d3js.org/d3.v4.min.js"></script>
-	
-	<script src="viz.v1.1.0.min.js"></script>	
+	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js'></script>
 	
 	<!-- Access the API & Load your JavaScript -->
 	<script type='text/JavaScript'
-		src='https://public.tableau.com/javascripts/api/tableau-2.js'></script>
+		src='http://public.tableau.com/javascripts/api/tableau-2.js'></script>	
 
 </head>
 
 <body>
 
 	<center>
-		<h2>D3 Chord Diagram with Tableau Superstore</h2>
-	
+		<h2>visjs 3-D Scatter - Medicare Cost Report Statistics</font></h2>
+		
 		<div class="flex-container">
-			<div id="D3_Chord_Diagram"></div>
-			<div id="mySuperstoreViz"></div>
+			<div id="mygraph"></div>
+			<div id="myMedicareStatViz"></div>
 		</div>
 	</center>
 		
-	<script src="Tableau_D3_Chord.js"></script>
 	
+	<script type="text/javascript" src="Tableau_3d_scatter.js"></script>
 </body>
 
 </html>
