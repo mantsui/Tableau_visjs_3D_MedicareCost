@@ -13,7 +13,7 @@ window.onload= function() {
 	var vizURL = 'https://public.tableau.com/views/MedicareCostRptProject/VisjsDashboardPair';
 	var options = {
 		width: '750px',
-		height: '675px',
+		height: '670px',
 		hideToolbar: true,
 		hideTabs: true,
 	
