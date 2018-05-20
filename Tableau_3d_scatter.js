@@ -190,8 +190,8 @@ function drawVisualization(inputArray) {
 	
 	// specify options
 	var options = {
-		width:  '660px',
-		height: '660px',
+		width:  '600px',
+		height: '600px',
 		style: 'dot-size',
 		showPerspective: false,
 		showGrid: true,
