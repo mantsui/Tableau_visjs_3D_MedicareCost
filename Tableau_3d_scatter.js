@@ -65,18 +65,15 @@ let Pass_Tableau_Data_to_visjs = function(vizName, sheetName, callback){
 	sheet.getSummaryDataAsync(options).then(function(TableauData){
 			Array_of_Columns = TableauData.getColumns();
 			Tableau_Array_of_Array = TableauData.getData();
-			//console.log('***** Debug output getData() *****');	// Debug output
-			//console.log(Tableau_Array_of_Array);			// Debug output
-			//console.log('***** Debug output getColumns() *****');	// Debug output
-			//console.log(Array_of_Columns);												// Debug output
+			console.log('Debug .getData()', Tableau_Array_of_Array);
 			
 			/*Convert Tableau data into Array of Objects for visjs processing. */
 			var Tableau_Array_of_Objects = ReduceToObjectTablulated(Array_of_Columns, Tableau_Array_of_Array);
-			//console.log('***** Display Tableau Array_Of_Objects *****');	// Debug output
-			//console.log(Tableau_Array_of_Objects);												// Debug output
+			console.log('Debug Tableau_Array_of_Objects ', Tableau_Array_of_Objects);
 					
 			var visjsDataInput = Convert_to_visjs_Array_of_Obj(Tableau_Array_of_Objects);
-
+			console.log('Debug visjsDataInput', visjsDataInput);
+		
 			// Verify callback object type is a function to call the draw chart
 			if(typeof callback === "function"){
 				// Javascript callback function to dynamically draw chart
